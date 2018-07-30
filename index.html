@@ -1,0 +1,137 @@
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" type="text/css" href="styles.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+	<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+	
+		<section id= "swap-info">
+			<h3> Site Visit Information</h3>
+			<div id='number'>
+				<label> Station number: </label>
+				<select name="station_no" class="input">
+					<option value= "unknown"> Unknown </option>
+					<option value= "08067074"> 08067074 </option>
+					<option value= "08068000"> 08068500 </option>
+					<option value= "08068500"> 08068500 </option>
+					<option value= "08069500"> 08069500 </option>
+				</select>
+			</div>
+			<br>
+			<div id= 'name'>
+				<label> Station name: </label>
+				<select name="station_name" class="input">
+				<option value= "unknown"> Unknown </option>
+				<option value= "CWA"> CWA Canal at Thompson Rd nr Baytown, TX </option>
+				<option value= "WF45"> W Fk San Jacinto Rv nr Conroe, TX </option>
+				<option value= "WF59"> West Fork San Jacinto near Humble,TX </option>
+				<option value= "Spring"> Spring Creek near Spring, TX</option>
+				</select>
+			</div>
+			<br>
+
+			<label> Date: </label><input type="date" name = "swap date" min = "2018-07-30" class="input">
+			<br><br>
+
+			<label> Field Monitor: </label><input type="text" id="field-monitor" class="input">
+			<br><br>
+			<label> Site Monitor: </label><input type="text" id="site-monitor" class="input"> 
+			<br><br>
+
+			<button type = "button" id = "field-readings"> Go to Field Readings </button>
+			
+		</section>
+		
+		<section id="swap-data">
+			<button type = "button" id = "button-main-page"> Return to Site Visit Information </button>
+			<div id= 'before-cleaning'>
+			<p> Before cleaning </p>
+				<table class= 'before'>
+					<tr>
+						<th> Parameter </th>
+						<th> Field Monitor </th>
+						<th> Site Monitor </th>
+					</tr>
+					<tr>
+						<td> Time </td>
+						<td><input type="time" class="input-number"></td>
+						<td><input type="time" class="input-number"></td>
+					</tr>
+					<tr>
+						<td> Temp </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+					<tr>
+						<td> SC </td>
+						<td><input type="number" class="input-number"></td>
+						<td><input type="number" class="input-number"></td>
+					</tr>
+					<tr>
+						<td> pH </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+					<tr>
+						<td> Turb </td>
+						<td><input type="number" class="input-number" step="0.1"></td>
+						<td><input type="number" class="input-number" step="0.1"></td>
+					</tr>
+					<tr>
+						<td> DO </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id= 'after-cleaning'>
+				<table class= 'after'>
+				<p> After cleaning </p>
+					<tr>
+						<th> Parameter </th>
+						<th> Field Monitor </th>
+						<th> Site Monitor </th>
+					</tr>
+					<tr>
+						<td> Time </td>
+						<td><input type="time" class="input-number"></td>
+						<td><input type="time" class="input-number"></td>
+					</tr>
+					<tr>
+						<td> Temp </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+					<tr>
+						<td> SC </td>
+						<td><input type="number" class="input-number"></td>
+						<td><input type="number" class="input-number"></td>
+					</tr>
+					<tr>
+						<td> pH </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+					<tr>
+						<td> Turb </td>
+						<td><input type="number" class="input-number" step="0.1"></td>
+						<td><input type="number" class="input-number" step="0.1"></td>
+					</tr>
+					<tr>
+						<td> DO </td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+						<td><input type="number" class="input-number" step="0.01"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<button type="submit" id="submit-form"> Submit </button>
+		</section>
+	</form>
+	<script src="app.js"></script>
+</body>
