@@ -104,7 +104,10 @@ label {
   	display: block;
   } 
 
-  button {
-  	display: none;
+  #field-readings,
+  #print-form,
+  #button-main-page {
+  	visibility: hidden;
   }
+
 }
