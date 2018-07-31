@@ -20,6 +20,6 @@ $('#print-form').click(function() {
   window.window.print();}, 500);
 
   setTimeout(function () { 
-    $('#swap-info').hide();}, 700);
+    $('#swap-info').hide();}, 2000);
 
 });

@@ -98,3 +98,13 @@ label {
 	display: block;
 	height: 40px;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  #swap-data {
+  	display: block;
+  } 
+
+  button {
+  	display: none;
+  }
+}
