@@ -1,6 +1,6 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1.0, maximum-scale=1.0>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1.0, maximum-scale=1.0, user-scalable=no>
  	<link rel="stylesheet" type="text/css" href="styles.css">
  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
@@ -12,9 +12,9 @@
 	
 		<section id= "swap-info">
 			<h3> Site Visit Information</h3>
-			<div id='number'>
+			<div id='station'>
 				<label> Station number: </label>
-				<select name="station_no" class="input">
+				<select name="station_no" class="input dropdown">
 					<option value= "unknown"> Unknown </option>
 					<option value= "08067074"> 08067074 </option>
 					<option value= "08068000"> 08068500 </option>
@@ -25,7 +25,7 @@
 			<br>
 			<div id= 'name'>
 				<label> Station name: </label>
-				<select name="station_name" class="input">
+				<select name="station_name" class="input dropdown">
 				<option value= "unknown"> Unknown </option>
 				<option value= "CWA"> CWA Canal at Thompson Rd nr Baytown, TX </option>
 				<option value= "WF45"> W Fk San Jacinto Rv nr Conroe, TX </option>
@@ -35,12 +35,12 @@
 			</div>
 			<br>
 
-			<label> Date: </label><input type="date" name = "swap date" min = "2018-07-30" class="input">
+			<label> Date: </label><input type="date" name = "swap date" min = "2018-07-30" class="input dropdown">
 			<br><br>
 
-			<label> Field Monitor: </label><input type="text" id="field-monitor" class="input">
+			<label> Field Monitor: </label><input type="text" id="field-monitor" class="input text">
 			<br><br>
-			<label> Site Monitor: </label><input type="text" id="site-monitor" class="input"> 
+			<label> Site Monitor: </label><input type="text" id="site-monitor" class="input text"> 
 			<br><br>
 
 			<button type = "button" id = "field-readings"> Go to Field Readings </button>
