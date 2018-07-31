@@ -1,8 +1,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	width: 100%;
+	max-width: 80%;
 	background-color: #ffffff;
 	text-align: left;
+
 }
 
 h3 {
@@ -34,7 +35,7 @@ td, th {
 }
 
 .input-number {
-	width: 110px;
+	max-width: 100px;
 	height: 40px;
 	font-size: 18px;
 	border: 0;
@@ -63,6 +64,7 @@ td, th {
     font-size: 16px;
     display: block;
     margin: auto;
+
 }
 
 label { 
